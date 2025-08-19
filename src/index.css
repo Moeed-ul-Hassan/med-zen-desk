@@ -54,6 +54,14 @@
 
     --radius: 0.5rem;
 
+    /* Enhanced gradients and shadows */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(190 95% 35%) 100%);
+    --gradient-soft: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--accent)) 100%);
+    --shadow-soft: 0 2px 8px -2px hsl(var(--foreground) / 0.08);
+    --shadow-medium: 0 4px 16px -4px hsl(var(--foreground) / 0.12);
+    --shadow-strong: 0 8px 32px -8px hsl(var(--foreground) / 0.16);
+    --shadow-glow: 0 0 32px hsl(var(--primary) / 0.3);
+
     --sidebar-background: 0 0% 98%;
 
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -116,6 +124,30 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer utilities {
+  /* Interactive Elements */
+  .story-link {
+    @apply relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
+  }
+  
+  .hover-scale {
+    @apply transition-transform duration-200 hover:scale-105;
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+  
+  .pulse-primary {
+    @apply animate-[pulse_2s_cubic-bezier(0.4,0,0.6,1)_infinite] bg-primary/20;
+  }
+  
+  /* Glass morphism effect */
+  .glass {
+    @apply backdrop-blur-md bg-white/10 border border-white/20;
   }
 }
