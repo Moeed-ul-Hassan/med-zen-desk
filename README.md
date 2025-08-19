@@ -1,73 +1,65 @@
-# Welcome to your Lovable project
+# 🧠 Clinic Management System — Internal Prototype (V0.1)
 
-## Project info
+Welcome to the early stage of our internal **Clinic Management System** — a foundation for a smarter, data-driven healthcare workflow.
 
-**URL**: https://lovable.dev/projects/6eae08e7-015b-4566-999a-6bb0e91d8edf
+> ⚠️ **Important:** This prototype currently includes only the **Dashboard** and **Patient Management** modules.  
+All other modules (Billing, Visit Records, Staff Scheduling, Messaging, Reporting) are under development and intentionally disabled.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 Vision
 
-**Use Lovable**
+Our goal is to build a single unified platform where **every clinic workflow** — from medical records to staff coordination and accounting — lives in one secure place.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6eae08e7-015b-4566-999a-6bb0e91d8edf) and start prompting.
+This is **not** a public-facing portal.  
+It’s designed **exclusively** for **clinic staff** to:
+- record and retrieve patient data instantly,
+- monitor internal activity in real time,
+- eliminate dependency on paper and fragmented tools.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## ✅ What works right now (V0.1)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+| Module           | Status       |
+|------------------|--------------|
+| Dashboard        | ✅ Available |
+| Patient Records  | ✅ Available |
+| Visit Records    | 🔒 Coming Soon |
+| Billing          | 🔒 Coming Soon |
+| Staff Scheduling | 🔒 Coming Soon |
+| Internal Messages| 🔒 Coming Soon |
+| Reporting        | 🔒 Coming Soon |
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🧬 Tech Overview
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+| Layer        | Stack                                    |
+|--------------|-------------------------------------------|
+| Framework    | Django (Monolith API + Server)           |
+| Prototype UI | React (TSX) + CSS / JavaScript           |
+| Database     | PostgreSQL                               |
+| Auth         | Django Auth / Groups                     |
+| UI Status    | Only Dashboard + Patients are prototyped |
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🧭 Roadmap (Next Releases)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+| Version | Target Features |
+|--------|------------------|
+| **v0.2** | Visit Records, Billing |
+| **v0.3** | Staff Scheduling, Internal Messaging |
+| **v1.0** | Reporting, Audit Log, Role Customization |
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🛡️ Internal Use Only
 
-**Use GitHub Codespaces**
+This project is **strictly for internal use within the clinic**.  
+No external/patient login, no public access, and **no third-party integrations** at this stage.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/6eae08e7-015b-4566-999a-6bb0e91d8edf) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Stay tuned — this is just the beginning.
