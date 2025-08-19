@@ -19,6 +19,7 @@ const sidebarItems = [
   { title: "Staff Schedules", path: "/schedules", icon: Calendar },
   { title: "Messages", path: "/messages", icon: MessageSquare },
   { title: "Reports", path: "/reports", icon: BarChart3 },
+  { title: "About Developer", path: "/about", icon: Stethoscope },
 ];
 
 export function Sidebar() {
